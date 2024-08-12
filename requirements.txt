@@ -47,4 +47,5 @@ Cython==0.29.36
 pip==24.2
 setuptools==68.0.0
 wheel==0.41.2
+cmake>=3.18.4
 
