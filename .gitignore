@@ -1,0 +1,9 @@
+.idea ../bin/
+ .DS_Store
+venv/bin/
+venv/etc/
+venv/lib/
+venv/pyvenv.cfg
+venv/share/
+.DS_Store
+
