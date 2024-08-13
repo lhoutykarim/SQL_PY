@@ -3,6 +3,18 @@ import pandas as pd
 import duckdb
 
 st.write("Hello world!")
+import streamlit as st
+
+option = st.selectbox(
+    "How would you like to check",
+    ("Join", "Group By", "Window"),
+    index=None,
+    placeholder="Select contact method...",
+)
+
+st.write('You selected:', option)
+
+
 data = {"a": [1, 2, 3], "b": [4, 5, 6]}
 df = pd.DataFrame(data)
 
