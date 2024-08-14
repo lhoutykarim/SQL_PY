@@ -2,17 +2,18 @@ import streamlit as st
 import pandas as pd
 import duckdb
 
-st.write("Hello world!")
+st.write("My Mini Project")
 import streamlit as st
 
-option = st.selectbox(
-    "How would you like to check",
-    ("Join", "Group By", "Window"),
-    index=None,
-    placeholder="Select contact method...",
-)
+with st.sidebar:
+    option = st.selectbox(
+        "How would you like to check",
+        ("Join", "Group By", "Window"),
+        index=None,
+        placeholder="Select contact method...",
+    )
 
-st.write('You selected:', option)
+    st.write('You selected:', option)
 
 
 data = {"a": [1, 2, 3], "b": [4, 5, 6]}
